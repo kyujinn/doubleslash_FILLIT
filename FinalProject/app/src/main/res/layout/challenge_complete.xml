@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/basicColor">
+
+            <TextView
+                android:id="@+id/textCongrat"
+                android:layout_width="259dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="70.67dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="76dp"
+                android:gravity="left"
+                android:text="축하드려요\n챌린지를 등록했어요!"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="336dp"
+                android:layout_height="401dp"
+                android:layout_marginLeft="70.67dp"
+                android:layout_marginRight="70.67dp"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/border_square_black_1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCongrat">
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="140dp"
+                    android:layout_height="23.33dp"
+                    android:layout_marginLeft="39.33dp"
+                    android:layout_marginTop="25.33dp"
+                    android:layout_marginRight="39.33dp"
+                    android:gravity="center"
+                    android:text="챌린지 제목"
+                    android:textSize="25dp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textDescription"
+                    android:layout_width="236dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="49.67dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="51.33dp"
+                    android:layout_marginBottom="22dp"
+                    android:gravity="center"
+                    android:text="챌린지 설명"
+                    android:textSize="20dp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/layoutDate"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutDate"
+                    android:layout_width="284dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/border_square_black_2"
+                    app:layout_constraintHorizontal_bias="0.464"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/textStartDate"
+                        android:layout_width="115dp"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="시작일"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textEndDate"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textEndDate"
+                        android:layout_width="117dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="150dp"
+                        android:text="종료일"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutReward"
+                    android:layout_width="283dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/border_square_black_2"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutDate">
+
+                    <TextView
+                        android:id="@+id/staticReward"
+                        android:layout_width="108dp"
+                        android:layout_height="29dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="150dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="챌린지 리워드"
+                        android:textSize="17dp"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="43dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="12.33dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="포인트"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textReward"
+                        android:layout_width="43dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="150dp"
+                        android:text="포인트"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutPointTotal"
+                    android:layout_width="277dp"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/border_square_black_2"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutReward">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="43dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="12.33dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="포인트"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/staticPointTotal"
+                        android:layout_width="73dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="합계 "
+                        android:textSize="17dp"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textPointTotal"
+                        android:layout_width="53dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="140dp"
+                        android:text="포인트"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/staticPointTotal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageLine"
+                    android:layout_width="185.67dp"
+                    android:layout_height="2sp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="14dp"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutPointTotal"
+                    app:srcCompat="@drawable/border_square_black_edge_1dp" />
+
+                <TextView
+                    android:id="@+id/textEncourage"
+                    android:layout_width="223dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="챌린지 등록으로 플라스틱 분해기간 140년을 막을 수 있어요! "
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageLine" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/complete"
+                style="@style/button05"
+                android:layout_width="301dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="30dp"
+                android:text="챌린지 완료"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

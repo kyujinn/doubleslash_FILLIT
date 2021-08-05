@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="130.67dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="13.33dp"
+    android:layout_marginLeft="13.33dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:background="@color/backcolor"
+    style="@style/item01">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="356dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="21.67dp"
+        android:layout_marginTop="12.67dp"
+        android:text="챌린지 제목"
+        android:textColor="#676767"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="361dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="21.67dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="94.67dp"
+        android:text="챌린지 간단 설명"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:layout_constraintVertical_bias="0.111" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

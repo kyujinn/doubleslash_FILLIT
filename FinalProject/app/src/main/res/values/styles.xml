@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="bannerLogo">
+        <item name="android:src">@drawable/logo_small</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="item01">
+        <item name="android:background">@drawable/item_01</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="banner01">
+        <item name="android:background">@drawable/banner_01</item>
+        <item name="android:elevation">4dp</item>
+        <item name="height">160px</item>
+    </style>
+
+    <style name="button01">
+        <item name="android:background">@drawable/button_01</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="button03">
+        <item name="android:background">@drawable/button_03</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="button04">
+        <item name="android:background">@drawable/button_04</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="button05">
+        <item name="android:background">@drawable/button_05</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+</resources>

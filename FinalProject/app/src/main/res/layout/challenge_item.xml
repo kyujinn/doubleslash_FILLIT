@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="13.33dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="13.33dp"
+    android:layout_marginBottom="5dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    style="@style/item01">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="198dp"
+        android:layout_height="32dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="21.67dp"
+        android:layout_marginTop="12.67dp"
+        android:text="챌린지 제목"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="343dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="21.67dp"
+        android:layout_marginTop="7dp"
+        android:text="챌린지 간단 설명"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="챌린지 기간 : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <TextView
+        android:id="@+id/Daterange"
+        android:layout_width="242dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:text="날짜 기간"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <TextView
+        android:id="@+id/textpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="획득 포인트 : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+    <TextView
+        android:id="@+id/getPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="포인트"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Daterange"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
